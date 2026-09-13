@@ -1,0 +1,11 @@
+/* ============================================================
+   team.css
+   ------------------------------------------------------------
+   Styles specific to Team Management (Module 7). Reuses tokens
+   from dashboard.css / player.css — only adds what's new here.
+   ============================================================ */
+
+.team-logo-preview{ border-radius:16px !important; }
+.team-logo-preview img{ object-fit:cover; }
+
+.team-table td{ vertical-align: middle; }

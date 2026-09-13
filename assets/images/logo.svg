@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B5ED7"/>
+      <stop offset="100%" stop-color="#0A4BAF"/>
+    </linearGradient>
+    <linearGradient id="swooshGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#198754"/>
+      <stop offset="100%" stop-color="#2FA96C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield emblem -->
+  <path d="M32 3
+           L54 10
+           V29
+           C54 44 45 54 32 61
+           C19 54 10 44 10 29
+           V10
+           Z"
+        fill="url(#shieldGrad)" stroke="#083E96" stroke-width="1"/>
+
+  <!-- Inner border -->
+  <path d="M32 8
+           L49 13.5
+           V29
+           C49 41 42 49 32 55
+           C22 49 15 41 15 29
+           V13.5
+           Z"
+        fill="none" stroke="#ffffff" stroke-width="1.4" opacity="0.55"/>
+
+  <!-- Dynamic motion swoosh -->
+  <path d="M16 37 C24 33, 40 33, 48 37 C40 42, 24 42, 16 37 Z" fill="url(#swooshGrad)" opacity="0.9"/>
+
+  <!-- Star (achievement / excellence) -->
+  <path d="M32 14
+           L35.1 22.2
+           L44 22.9
+           L37.1 28.6
+           L39.3 37.2
+           L32 32.4
+           L24.7 37.2
+           L26.9 28.6
+           L20 22.9
+           L28.9 22.2
+           Z"
+        fill="#FFC107"/>
+</svg>

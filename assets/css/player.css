@@ -1,0 +1,47 @@
+/* ============================================================
+   player.css
+   ------------------------------------------------------------
+   Styles specific to Player Management (Module 5). Reuses the
+   color tokens already declared in dashboard.css — this file
+   only adds what dashboard.css doesn't cover.
+   ============================================================ */
+
+/* ---------- Image upload preview ---------- */
+.image-upload-preview{
+  width:130px; height:130px; border-radius:50%; overflow:hidden;
+  border:3px solid var(--border); margin:0 auto; background:var(--bg);
+}
+.image-upload-preview img{ width:100%; height:100%; object-fit:cover; }
+
+/* ---------- Credential panel (Add Player success) ---------- */
+.credential-panel{ border:1px solid var(--secondary); background:rgba(25,135,84,.04); }
+.credential-box{
+  background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:14px 16px; text-align:center;
+}
+.credential-box span{ display:block; font-size:.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:.06em; margin-bottom:4px; }
+.credential-box strong{ font-size:1rem; word-break:break-all; }
+
+/* ---------- Star rating display ---------- */
+.star-rating-display{ font-size:1.1rem; color:var(--accent); }
+.star-rating-display i{ margin:0 1px; }
+.star-rating-display .fa-regular{ color:var(--border); }
+
+/* ---------- DataTables Buttons (Excel/PDF/Print) polish ---------- */
+.dt-buttons{ margin-bottom:14px; }
+.dt-buttons .btn{
+  border-radius:8px !important; font-size:.8rem !important; font-weight:600 !important;
+  border:1px solid var(--border) !important; color:var(--text-dark) !important; background:var(--surface) !important;
+  margin-right:6px !important;
+}
+.dt-buttons .btn:hover{ border-color:var(--primary) !important; color:var(--primary) !important; }
+
+/* ---------- Print-only credentials sheet ---------- */
+#printableCredentials{ display:none; }
+@media print{
+  body *{ visibility:hidden; }
+  #printableCredentials, #printableCredentials *{ visibility:visible; }
+  #printableCredentials{
+    display:block; position:absolute; top:0; left:0; width:100%; padding:40px;
+  }
+}

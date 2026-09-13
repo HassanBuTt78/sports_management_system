@@ -1,0 +1,34 @@
+/* ============================================================
+   matches.css
+   ------------------------------------------------------------
+   Styles specific to Match Management (Module 9). Reuses tokens
+   and the badge-* classes already defined in dashboard.css /
+   events.css — only adds what's genuinely new here.
+   ============================================================ */
+
+/* ---------- Live "Running" pulse badge on view.php ---------- */
+.live-pulse-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .7rem; font-weight: 700; letter-spacing: .04em;
+  color: #c1443c; background: #fdecea; border-radius: 999px;
+  padding: 3px 10px; vertical-align: middle;
+  animation: livePulse 1.6s ease-in-out infinite;
+}
+@keyframes livePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .55; }
+}
+
+/* ---------- Mini profile cell (avatar + name inline) ---------- */
+.mini-profile { display: flex; align-items: center; gap: 8px; }
+
+/* ---------- Clickable 1-5 star rating input ---------- */
+.star-rating-input { display: flex; gap: 6px; }
+.star-rating-input .star-icon {
+  font-size: 1.4rem; color: #ddd; cursor: pointer; transition: color .15s ease, transform .1s ease;
+}
+.star-rating-input .star-icon:hover { transform: scale(1.15); }
+.star-rating-input .star-icon.active { color: #FFC107; }
+
+/* ---------- Match table result column ---------- */
+.match-table td { vertical-align: middle; }

@@ -1,0 +1,18 @@
+# Prevent direct browser access to the PHP files in this folder — they
+# are meant to be include()'d by other PHP scripts, never requested
+# directly (this is what protects env.php's encryption key from ever
+# being fetched as a URL). CSS/JS files in this same folder (like
+# dashboard.css and dashboard.js) are NOT blocked — every dashboard
+# page loads them directly via <link>/<script> tags, so denying the
+# whole folder breaks the entire site's styling and JS.
+# (Apache config; if you're on Nginx, add an equivalent `location`
+# block denying *.php under /includes/ instead.)
+<FilesMatch "\.php$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>

@@ -1,0 +1,59 @@
+/* ============================================================
+   performance.css — Module 11 Player Performance Analysis
+   ============================================================ */
+
+.perf-highlight-card { min-height: 90px; }
+.perf-highlight-label { font-size: .8rem; font-weight: 700; color: var(--text-muted, #6b7686); text-transform: uppercase; letter-spacing: .03em; }
+
+.perf-profile-header { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.perf-profile-photo { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 2px 10px rgba(20,30,60,.12); }
+.perf-profile-score { margin-left: auto; text-align: center; }
+.perf-score-circle {
+  width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--primary, #0B5ED7), #2a5da8);
+  color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.15rem; margin: 0 auto 4px;
+}
+.perf-stars { color: #FFC107; font-size: 1rem; letter-spacing: 2px; }
+.perf-stars-small { color: #FFC107; letter-spacing: 1px; }
+
+.perf-level-badge { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: .72rem; font-weight: 700; margin-top: 4px; }
+.perf-level-Excellent { background: #e7f7ee; color: #198754; }
+.perf-level-VeryGood { background: #eaf6ee; color: #2f8f5b; }
+.perf-level-Good { background: #e9f0fb; color: #2a5da8; }
+.perf-level-Average { background: #fff3cd; color: #856404; }
+.perf-level-NeedsImprovement { background: #fdecea; color: #c1443c; }
+.perf-level-InsufficientData { background: #f0f0f0; color: #888; }
+
+.perf-trend-badge { display: inline-block; padding: 3px 10px; border-radius: 14px; font-size: .75rem; font-weight: 600; }
+.perf-trend-improving { background: #e7f7ee; color: #198754; }
+.perf-trend-declining { background: #fdecea; color: #c1443c; }
+.perf-trend-stable { background: #e9f0fb; color: #2a5da8; }
+.perf-trend-new { background: #fff3cd; color: #856404; }
+.perf-trend-insufficientdata { background: #f0f0f0; color: #888; }
+
+.perf-component-row { margin-bottom: 12px; }
+.perf-component-row .progress-bar { background: var(--primary, #0B5ED7); }
+
+.perf-insights-list { list-style: none; padding: 0; margin: 0; }
+.perf-insights-list li { display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border, #e5eaf2); font-size: .9rem; }
+.perf-insights-list li:last-child { border-bottom: none; }
+.perf-insights-list i { color: #FFC107; margin-top: 2px; }
+
+.perf-rank-row { display: flex; align-items: center; gap: 10px; padding: 10px 6px; border-bottom: 1px solid var(--border, #e5eaf2); text-decoration: none; color: inherit; }
+.perf-rank-row:last-child { border-bottom: none; }
+.perf-rank-row:hover { background: var(--bg, #f4f6fb); }
+.perf-rank-row img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.perf-rank-num { font-weight: 700; color: var(--primary, #0B5ED7); width: 32px; flex-shrink: 0; }
+.perf-score-pill { background: #e9f0fb; color: var(--primary, #0B5ED7); font-weight: 700; padding: 3px 12px; border-radius: 14px; font-size: .85rem; }
+
+.perf-mini-player { display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; color: inherit; padding: 12px; border-radius: 12px; background: var(--bg, #f4f6fb); text-align: center; }
+.perf-mini-player img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; }
+.perf-mini-player span { font-size: .82rem; font-weight: 600; }
+.perf-mini-player small { color: #c1443c; font-weight: 700; }
+
+.perf-rating-row { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border, #e5eaf2); }
+.perf-rating-row:last-child { border-bottom: none; }
+
+@media (max-width: 767px) {
+  .perf-profile-header { flex-direction: column; text-align: center; }
+  .perf-profile-score { margin-left: 0; }
+}

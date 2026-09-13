@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380">
+  <defs>
+    <linearGradient id="g_sport-volleyball" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#198754"/>
+      <stop offset="100%" stop-color="#0f9d6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="380" fill="url(#g_sport-volleyball)"/>
+  <circle cx="410" cy="60" r="90" fill="#ffffff" opacity="0.08"/>
+  <circle cx="60" cy="330" r="70" fill="#ffffff" opacity="0.08"/>
+  <text x="40" y="300" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">Volleyball</text>
+  <text x="40" y="70" font-family="Arial" font-size="52" fill="#ffffff" opacity="0.9">🏐</text>
+</svg>
